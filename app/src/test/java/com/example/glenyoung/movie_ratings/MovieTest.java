@@ -26,4 +26,9 @@ public class MovieTest {
     public void canGetGenre() {
         assertEquals("Drama", movie1.getGenre());
     }
+
+    @Test
+    public void canGetCurrentRating() {
+        assertEquals(7, movie2.getCurrentRanking());
+    }
 }

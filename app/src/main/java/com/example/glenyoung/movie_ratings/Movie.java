@@ -22,4 +22,8 @@ public class Movie {
     public String getGenre() {
         return genre;
     }
+
+    public int getCurrentRanking() {
+        return currentRanking;
+    }
 }
