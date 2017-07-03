@@ -37,4 +37,10 @@ public class MovieTest {
         movie1.setTitle("The Godfather");
         assertEquals("The Godfather", movie1.getTitle());
     }
+
+    @Test
+    public void canSetGenre() {
+        movie1.setGenre("Crime");
+        assertEquals("Crime", movie1.getGenre());
+    }
 }
