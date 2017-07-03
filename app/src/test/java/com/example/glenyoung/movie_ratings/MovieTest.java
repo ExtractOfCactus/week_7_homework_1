@@ -49,4 +49,9 @@ public class MovieTest {
         movie2.setCurrentRanking(6);
         assertEquals(6, movie2.getCurrentRanking());
     }
+
+    @Test
+    public void canToString() {
+        assertEquals("Title: Pulp Fiction, Genre: Crime, Ranking: 7", movie2.toString());
+    }
 }

@@ -38,4 +38,8 @@ public class Movie {
     public void setCurrentRanking(int currentRanking) {
         this.currentRanking = currentRanking;
     }
+
+    public String toString() {
+        return "Title: " + this.title +", Genre: " + this.genre + ", Ranking: " + this.currentRanking;
+    }
 }
