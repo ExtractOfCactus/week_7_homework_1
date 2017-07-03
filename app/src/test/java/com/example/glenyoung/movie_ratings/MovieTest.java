@@ -21,4 +21,9 @@ public class MovieTest {
     public void canGetTitle() {
         assertEquals("Pulp Fiction", movie2.getTitle());
     }
+
+    @Test
+    public void canGetGenre() {
+        assertEquals("Drama", movie1.getGenre());
+    }
 }

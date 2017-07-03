@@ -18,4 +18,8 @@ public class Movie {
     public String getTitle() {
         return title;
     }
+
+    public String getGenre() {
+        return genre;
+    }
 }
