@@ -26,4 +26,8 @@ public class Movie {
     public int getCurrentRanking() {
         return currentRanking;
     }
+
+    public void setTitle(String newTitle) {
+        this.title = newTitle;
+    }
 }

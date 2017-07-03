@@ -31,4 +31,10 @@ public class MovieTest {
     public void canGetCurrentRating() {
         assertEquals(7, movie2.getCurrentRanking());
     }
+
+    @Test
+    public void canSetTitle() {
+        movie1.setTitle("The Godfather");
+        assertEquals("The Godfather", movie1.getTitle());
+    }
 }
