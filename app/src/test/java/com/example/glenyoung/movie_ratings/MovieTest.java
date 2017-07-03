@@ -28,7 +28,7 @@ public class MovieTest {
     }
 
     @Test
-    public void canGetCurrentRating() {
+    public void canGetCurrentRanking() {
         assertEquals(7, movie2.getCurrentRanking());
     }
 
@@ -42,5 +42,11 @@ public class MovieTest {
     public void canSetGenre() {
         movie1.setGenre("Crime");
         assertEquals("Crime", movie1.getGenre());
+    }
+
+    @Test
+    public void canSetCurrentRanking() {
+        movie2.setCurrentRanking(6);
+        assertEquals(6, movie2.getCurrentRanking());
     }
 }

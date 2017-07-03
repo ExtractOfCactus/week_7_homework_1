@@ -34,4 +34,8 @@ public class Movie {
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
+    public void setCurrentRanking(int currentRanking) {
+        this.currentRanking = currentRanking;
+    }
 }
