@@ -39,25 +39,27 @@ public class RankingList {
         return null;
     }
 
-//    public void moveMovieInRankings(String title, int newRanking) {
-//        Movie targetMovie = findMovieByTitle(title);
-//        int oldRanking = targetMovie.getCurrentRanking();
-//        for (Movie movie : rankings) {
-//            if (movie != targetMovie) {
-//                if (movie.getCurrentRanking() >= newRanking && movie.getCurrentRanking() < oldRanking) {
-//                    rankings[(movie.getCurrentRanking() + 1)] = movie;
-//                }
-//            }
-//        }
-//        targetMovie.setCurrentRanking(newRanking);
-//
-//        rankings[newRanking - 1] = targetMovie;
-//    }
-
     public void moveMovieInRankings(String title, int newRanking) {
-        Movie targetMovie =findMovieByTitle(title);
+        Movie targetMovie = findMovieByTitle(title);
+        int oldRanking = targetMovie.getCurrentRanking();
+        for (Movie movie : rankings) {
+            if (movie != targetMovie) {
+                if (movie.getCurrentRanking() >= newRanking && movie.getCurrentRanking() < oldRanking) {
+//                    rankings[(movie.getCurrentRanking() + 1)] = movie;
+
+                    movie.setCurrentRanking(movie.getCurrentRanking() + 1);
+                }
+            }
+        }
         targetMovie.setCurrentRanking(newRanking);
+
         rankings[newRanking - 1] = targetMovie;
     }
+
+//    public void moveMovieInRankings(String title, int newRanking) {
+//        Movie targetMovie =findMovieByTitle(title);
+//        targetMovie.setCurrentRanking(newRanking);
+//        rankings[newRanking - 1] = targetMovie;
+//    }
 
 }

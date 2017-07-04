@@ -61,6 +61,6 @@ public class RankingListTest {
     public void canMoveAMovieInRankings() {
         rankingList.moveMovieInRankings("Pulp Fiction", 4);
         assertEquals(movie7, rankingList.findMovieByRank(4));
-        assertEquals(5, movie5.getCurrentRanking());
+        assertEquals(5, movie4.getCurrentRanking());
     }
 }
